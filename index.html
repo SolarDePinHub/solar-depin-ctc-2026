@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Solar DePIN</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#0b0f14; color:#e8eef5; margin:0; }
+    .wrap { max-width: 860px; margin: 40px auto; padding: 0 20px; }
+    h1 { margin: 0 0 8px; }
+    .sub { color:#9bb0c7; margin-bottom: 28px; }
+    .card { background:#151b22; border:1px solid #2a3542; border-radius:14px; padding:18px 20px; margin:14px 0; }
+    a { color:#7dbeff; }
+    .ok { color:#3ddc84; font-weight:bold; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    .pill { background:#203040; padding:8px 12px; border-radius:999px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Solar DePIN</h1>
+    <div class="sub">AI call screening compute, settled on Creditcoin with Attestcoin proofs.</div>
+
+    <div class="card">
+      <b>Flow</b><br/>
+      1. User pays for AI screening on Sepolia<br/>
+      2. Attestcoin proves that payment<br/>
+      3. SolarSettlement on Creditcoin unlocks credits for the node
+    </div>
+
+    <div class="card">
+      <div class="ok">Live testnet demo: SUCCESS</div>
+      <p>Payment on Sepolia was verified on Creditcoin via Attestcoin <code>settleFromProof</code>.</p>
+      <div class="row">
+        <div class="pill">Sepolia source</div>
+        <div class="pill">Creditcoin ASC</div>
+        <div class="pill">Attestcoin proof</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <b>Contracts</b><br/>
+      SolarSource (Sepolia):
+      <a href="https://sepolia.etherscan.io/address/0x3EB89f40d8DA5Da3C73F14A1fC6aEf22874baAFe" target="_blank">0x3EB8...aAFe</a><br/>
+      SolarSettlement (Creditcoin):
+      <a href="https://creditcoin-testnet.blockscout.com/address/0x3EB89f40d8DA5Da3C73F14A1fC6aEf22874baAFe" target="_blank">0x3EB8...aAFe</a>
+    </div>
+
+    <div class="card">
+      <b>Proof transactions</b><br/>
+      Sepolia payment:
+      <a href="https://sepolia.etherscan.io/tx/0xa21e0d78863233a2657eb2be16c63ad05df2d88ee54658279b1a1cc0db9d0d87" target="_blank">pay tx</a><br/>
+      Creditcoin settlement:
+      <a href="https://creditcoin-testnet.blockscout.com/tx/0x683bb43c3ded7ffeca722840b170b4753db621bfb418d11a8222b2872beb1d3" target="_blank">settleFromProof SUCCESS</a>
+    </div>
+  </div>
+</body>
+</html>
