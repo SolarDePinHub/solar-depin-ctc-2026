@@ -11,6 +11,14 @@ Solar DePIN uses Attestcoin as the settlement path, not a wrapper.
 
 No bridge. No oracle operator.
 
+## Creditcoin precompile
+
+Settlement is verified by Creditcoin's Block Prover precompile at `0x0FD2`.
+`prove.mjs` pulls a Merkle inclusion proof plus a continuity proof of the Sepolia pay tx (chainKey 1).
+`SolarSettlement.settleFromProof` submits that proof on-chain; the precompile checks both proofs in the same transaction.
+`0x0FD3` (ChainInfo) is used only to wait until the Sepolia height is attested.
+No bridge message and no oracle signature is trusted for the credit unlock.
+
 ## Proof parameters
 
 - Source chain: Ethereum Sepolia
