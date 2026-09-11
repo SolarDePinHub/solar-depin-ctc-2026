@@ -27,3 +27,8 @@ No Solana. Creditcoin is the settlement layer.
 Open `index.html`.
 Proof script: `node prove.mjs`
 Settlement script: `PRIVATE_KEY=0x... node settle.mjs`
+
+## Docs
+- Attestcoin: ATTESTCOIN.md
+- Live demo: https://solardepinhub.github.io/solar-depin-ctc-2026/
+- Hardware: 30kW solar testbed + GPU node (solardepin.net)
