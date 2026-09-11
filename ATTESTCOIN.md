@@ -38,8 +38,4 @@ https://creditcoin-testnet.blockscout.com/tx/0x683bb43c3ded7ffeca722840b170b4753
 ```bash
 node prove.mjs
 PRIVATE_KEY=0x... node settle.mjs
-cd /home/SolarDePin/solar-depin
-git add ATTESTCOIN.md
-git commit -m "add Attestcoin integration doc"
-git push origin main
 
